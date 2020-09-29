@@ -19,4 +19,10 @@
 - (int)setIndexbyCN:(NSString*)CN;
 - (NSString*)getTitle;
 
+- (NSString*)getCertificationDNString;
+- (CFDataRef)getCertDer;
+- (long)L4Proxy_Sign:(const char*)signdata outsigned:(unsigned char*)csigned outsignlen:(int*)len;
+- (NSString*)getAccountInfo:(NSString*)appID  withAccountType:(NSString*)accountType;
+- (BOOL)authnByP7;
+
 @end
